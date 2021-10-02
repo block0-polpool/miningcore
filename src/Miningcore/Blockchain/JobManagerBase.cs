@@ -62,7 +62,7 @@ namespace Miningcore.Blockchain
         protected string NextJobId(string format = null)
         {
             Interlocked.Increment(ref jobId);
-            var value = Interlocked.CompareExchange(ref jobId, 0, int.MinValue);
+            var value = Interlocked.CompareExchange(ref jobId, 0, int32.MinValue);
 
             if(format != null)
                 return value.ToString(format);
