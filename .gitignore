@@ -8,6 +8,7 @@
 [Rr]elease/
 x64/
 build/
+buildDebian/
 [Bb]in/
 [Oo]bj/
 *.VC.db
